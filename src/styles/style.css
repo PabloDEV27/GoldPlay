@@ -1,0 +1,20 @@
+@import url("./global.css");
+
+/* --- HEADER --- */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-navigation{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.itens-navigation{
+    display: flex;
+    gap: 25px;
+    
+}
