@@ -5,6 +5,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--color-black);
 }
 
 .header-navigation{
@@ -16,5 +17,159 @@ header{
 .itens-navigation{
     display: flex;
     gap: 25px;
-    
+
+}
+
+.itens-navigation li a{
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+}
+
+.container-search{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.container-search form{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--color-brand);
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.container-search form input{
+    background-color: transparent;
+    color: var(--color-foreground);
+}
+
+.container-search form input:focus{
+    outline: none;
+}
+
+.container-search form button{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.btnHeader{
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--color-black);
+    background-color: var(--color-brand);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    gap: 20px;
+    height: 80vh;
+    background-image: url(../assets/images/illustrationMain.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--color-black);
+}
+
+h1{
+    color: var(--color-foreground);
+    font-size: var(--font-size-h1);
+    font-family: var(--font-title);
+    width: 492px;
+    font-weight: 400;
+}
+
+h1 span{
+    color: var(--color-brand);
+}
+
+main p{
+    color: var(--color-foreground);
+    font-size: var(--font-size-body);
+    font-family: var(--font-body);
+    width: 480px;
+}
+
+main nav{
+    display: flex;
+    gap: 20px;
+}
+
+.btnPrimary, .btnOutline{
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-family: var(--font-body);
+    font-weight: 700;
+}
+
+.btnPrimary{
+    background-color: var(--color-brand);
+    color: var(--color-black);
+}
+
+.btnOutline{
+    color: var(--color-brand);
+    border: 1px solid var(--color-brand);
+}
+
+.card-genre{
+    position: relative;
+}
+
+.details-genre{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: var(--color-foreground);
+}
+
+.details-genre h3{
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: var(--font-size-h3);
+}
+
+.details-genre p{
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+}
+
+.section-genre{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    background-color: var(--color-black);
+}
+
+.section-genre > div{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section-genre h2{
+    color: var(--color-foreground);
+    font-size: var(--font-size-h2);
+    font-family: var(--font-title);
+    font-weight: 400;
+}
+
+.section-genre h2 span{
+    color: var(--color-brand);
+}
+
+.container-genre{
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    gap: 20px;
 }
